@@ -20,7 +20,11 @@ body:before{
     background-image: url(../../images/game/spawn.png);
     background-size: cover;
     content: "";
-    filter: blur(15px);
+    filter: blur(20px);
+    -moz-filter: blur(20px);
+    -ms-filter: blur(20px);
+    -o-filter: blur(20px);
+    -webkit-filter: blur(20px);
     height: 100%;
     position: fixed;
     transform: scale(1.2);
@@ -99,6 +103,13 @@ h6{
 #footer{
     padding: 0.8em;
 }
+#footer a{
+    color: #66cd00;
+    transition: 0.2s color ease-in-out;
+}
+#footer a:hover{
+    color: #52a600;
+}
 #footer .list li{
     display: inline-block;
 }
@@ -106,18 +117,12 @@ h6{
     content: "\00b7";
     padding: 0 0.5em 0 0.5em;
 }
-#footer .list li > a{
-    color: #66cd00;
-}
 .icon{
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
     text-decoration: none;
     text-transform: none !important;
-}
-@media screen and (max-width: 980px){
-
 }
 @media screen and (max-width: 736px){
     #header .logo{
